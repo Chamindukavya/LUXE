@@ -2,6 +2,14 @@
 
 import { useEffect, useState } from 'react';
 import { ArrowDown, Mail, Phone, MapPin, Heart, Star, Users, Award } from 'lucide-react';
+import Image from 'next/image';
+import image1 from '../lib/images/image1.jpg';
+import image2 from '../lib/images/image2.jpg';
+import image3 from '../lib/images/image3.jpg';
+import print1 from '../lib/images/print1.jpg';
+import print2 from '../lib/images/print2.jpg';
+import print3 from '../lib/images/print3.jpg';
+import logo from '../lib/images/logo.jpg';
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -163,8 +171,8 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="group cursor-pointer">
                 <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-500">
-                  <img 
-                    src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop"
+                  <Image
+                    src={image3}
                     alt="Handwoven Dress"
                     className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -178,8 +186,8 @@ export default function Home() {
               
               <div className="group cursor-pointer">
                 <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-500">
-                  <img 
-                    src="https://images.pexels.com/photos/1381556/pexels-photo-1381556.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop"
+                  <Image
+                    src={image1}
                     alt="Artisan Blouse"
                     className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -193,8 +201,52 @@ export default function Home() {
               
               <div className="group cursor-pointer">
                 <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-500">
-                  <img 
-                    src="https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop"
+                  <Image
+                    src={image2}
+                    alt="Cultural Fusion"
+                    className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 className="text-xl font-semibold">Cultural Fusion</h3>
+                    <p className="text-sm">East meets West elegance</p>
+                  </div>
+                </div>
+              </div>
+              <div className="group cursor-pointer">
+                <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-500">
+                  <Image
+                    src={print3}
+                    alt="Handwoven Dress"
+                    className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 className="text-xl font-semibold">Handwoven Elegance</h3>
+                    <p className="text-sm">Traditional patterns, modern cut</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="group cursor-pointer">
+                <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-500">
+                  <Image
+                    src={print1}
+                    alt="Artisan Blouse"
+                    className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 className="text-xl font-semibold">Artisan Blouses</h3>
+                    <p className="text-sm">Intricate embroidery details</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="group cursor-pointer">
+                <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-all duration-500">
+                  <Image
+                    src={print2}
                     alt="Cultural Fusion"
                     className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -249,8 +301,8 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop"
+              <Image 
+                src={logo}
                 alt="Artisan at work"
                 className="rounded-xl shadow-2xl"
               />
